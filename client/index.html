@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Node.js File Upload</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+      <header>          
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">                
+                <span class="navbar-brand">
+                    <img alt="Logo" src="img/logo.png" style="height: 25px; width: auto;">                    
+                </span>
+            <p class="navbar-text">Simple Node.js File Upload</p>
+            </div>
+            
+        </div>
+      </nav>
+      </header>
+      
+      <main>      
+      <div class="col-sm-4">
+        <form class="form-inline" id="uploadForm" enctype="multipart/form-data" action="/api/upload" method="post">        
+            <div class="form-group">
+                <label class="btn btn-primary">
+                    Browse <input type="file" style="display: none;" name="fileUpload" required>
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <input class="btn btn-success" type="submit" value="Upload file" name="submit">                
+            </div>
+        </form>
+      </div>
+      </main>
+  </body>
+</html>
